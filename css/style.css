@@ -19,6 +19,7 @@ ul li a:hover {
     font-weight: 600;
 }
 
+
 #indexHeader,
 #nosotros,
 #servicios,
@@ -60,6 +61,7 @@ h4 {
 }
 
 .titulos {
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 2em;
     color: #155D8D;
     padding-top: 30px;
@@ -144,7 +146,7 @@ footer {
     margin-left: 10 px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
 
     /* HEADER*/
     header {
@@ -154,6 +156,7 @@ footer {
         justify-content: space-around;
         align-items: center;
         padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     ul li {
@@ -164,11 +167,15 @@ footer {
         text-align: right;
     }
 
+    .container-fluid {
+        display: none;
+    }
+
     /*IMAGEN CONTENEDOR*/
     .contenedor {
         position: relative;
-        width: 90vw;
-        padding-left: 1.5rem;
+        width: 100vw;
+        /*padding-left: 1.5rem;*/
     }
 
     .imagenMobile {
@@ -178,17 +185,17 @@ footer {
     .texto1 {
         position: absolute;
         font-family: 'Barlow Condensed', sans-serif;
-        font-size: 3em;
+        font-size: 2.5em;
         font-weight: 600;
         color: white;
         top: 130px;
-        left: 170px;
+        left: 220px;
     }
 
     .texto2 {
         position: absolute;
         font-family: 'Barlow Condensed', sans-serif;
-        font-size: 3em;
+        font-size: 2.5em;
         font-weight: 600;
         color: white;
         top: 60%;
@@ -216,25 +223,31 @@ footer {
         padding-right: 110px;
     }
 
-    .articles {
+    .articles,
+    .articlesIndex {
         display: grid;
         grid-template-columns: (3 1fr);
         grid-template-rows: auto;
         grid-column-gap: 20px;
         grid-row-gap: auto;
         grid-template-areas: "articulo1 articulo2 articulo3";
-        justify-content: space-around;
+        justify-content: space-between;
         transition: box-shadow .1s;
+    }
+
+    .articlesIndex {
+        padding-left: 50px;
     }
 
     .articulo1,
     .articulo2,
     .articulo3 {
         background-color: #EFF8FF;
-        width: 330px;
+        width: 380px;
         height: 534;
         margin-top: 60px;
         margin-bottom: 60px;
+        margin-left: 60px;
         padding-top: 40px;
         padding-bottom: 40px;
         border-radius: 10px;
@@ -265,7 +278,7 @@ footer {
     }
 
     .imagenArticle {
-        padding-left: 45px;
+        image-resolution: 240;
     }
 
     .parrafoArticle {
@@ -274,15 +287,23 @@ footer {
         font-size: 1.3em;
         line-height: 1.5;
         text-align: center;
-        width: 250px;
-        padding-left: 40px;
+        width: 300px;
+        padding-left: 50px;
     }
 
     /*BOTON CONTACTANOS*/
     .cajaBoton {
         margin-bottom: 80px;
-        grid-area: "boton";
         margin-left: 560px;
+    }
+
+    .cajaBotonDesktop {
+        margin-bottom: 80px;
+        margin-left: 560px;
+    }
+
+    .cajaBotonMobile {
+        display: none;
     }
 
     .boton {
@@ -440,8 +461,12 @@ footer {
 
     /*PAGINA SERVICIOS*/
     /*COMO TRABAJAMOS*/
-    .iconosServicios {
-        padding-left: 130px;
+    .img-circle {
+        margin-left: 140px;
+    }
+
+    #mobile {
+        display: none;
     }
 
     /*SERVICIOS*/
@@ -483,14 +508,12 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
         grid-template-rows: auto auto auto;
-        grid-column-gap: 15px;
+        grid-column-gap: 25px;
         grid-row-gap: 50px;
         grid-template-areas: "articuloServicio1 articuloServicio1 articuloServicio2 articuloServicio2 articuloServicio3 articuloServicio3""articuloServicio4 articuloServicio4 articuloServicio5 articuloServicio5 articuloServicio6 articuloServicio6""articuloServicio7 articuloServicio7 articuloServicio7 articuloServicio8 articuloServicio8 articuloServicio8";
-        justify-items: center;
-        align-items: start;
-        justify-content: space-between;
-        align-content: space-between;
-        padding: 40px 50px 40px 50px;
+        align-items: space-evenly;
+        padding-top: 40px;
+        padding-left: 160px;
     }
 
     .articuloServicio1,
@@ -540,14 +563,19 @@ footer {
         color: #155D8D;
     }
 
+    .servicio {
+        width: 25rem;
+        padding-left: 40px;
+    }
+
     h5 {
         font-weight: 500;
         font-size: 1.3em;
         text-align: center;
         line-height: 1.5;
-        width: 200px;
-        padding-left: 20px;
-
+        width: 220px;
+        padding-left: 30px;
+        margin-left: 10px;
     }
 
     .parrafoServicio {
@@ -557,30 +585,39 @@ footer {
         width: 250px;
     }
 
+    .articuloServicio7,
+    .articuloServicio8 {
+        padding-left: 120px;
+    }
+
     /*PAGINA CLIENTES*/
-    .clientes {
-        grid-column: 1/4;
-        margin-left: 1.5rem;
-        margin-top: 2rem;
+    .comentarios {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 1.2em;
+        margin-left: 60px;
     }
 
-    #coment1 {
-        padding-top: 20px;
-        padding-left: 60px;
+    .comentariosSegundo {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 1.2em;
+        margin-left: 90px;
     }
 
-    #coment2 {
-        padding-top: 80px;
-        padding-left: 280px;
+    .comentario {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 0.9em;
     }
 
-    #coment3 {
-        padding-top: 80px;
-        padding-left: 350px;
-        padding-bottom: 80px;
+    .imagenComentario {
+        padding-top: 5px;
+        height: 250px;
     }
 
     /*PAGINA CONTACTO*/
+    #sectionContacto {
+        padding-left: 60px;
+    }
+
     .formularioContacto {
         background-color: #EFF8FF;
         height: 550px;
@@ -678,7 +715,7 @@ footer {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
 
     /*HEADER*/
     header {
@@ -697,17 +734,21 @@ footer {
         padding-left: 80px;
     }
 
+    #ulNav {
+        margin-right: 15px;
+    }
+
     ul li {
         display: inline-block;
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         text-align: right;
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     a {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     /*FOOTER*/
@@ -718,6 +759,7 @@ footer {
     #footer {
         display: flex;
         justify-content: space-evenly;
+        margin-right: 20px;
     }
 
     .linkFooter {
@@ -777,27 +819,27 @@ footer {
     }
 
     .imagenMobile {
-        padding-left: 10px;
+        width: 100vw;
     }
 
     .texto1 {
         position: absolute;
         font-family: 'Barlow Condensed', sans-serif;
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 600;
         color: white;
-        top: 200px;
-        left: 70px;
+        top: 320px;
+        left: 160px;
     }
 
     .texto2 {
         position: absolute;
         font-family: 'Barlow Condensed', sans-serif;
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 600;
         color: white;
-        top: 45%;
-        left: 162px;
+        top: 380px;
+        left: 290px;
         transform: translate(-50%, -50%);
     }
 
@@ -805,8 +847,18 @@ footer {
     #textoServicios,
     #textoClientes,
     #textoContacto {
-        padding-top: 80px;
-        padding-left: 45px;
+        position: absolute;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 2.5em;
+        font-weight: 600;
+        color: white;
+        top: 370px;
+        left: 220px;
+    }
+
+    #textoClientes,
+    #textoContacto {
+        color: #155D8D;
     }
 
     /*SECTION INDEX*/
@@ -814,7 +866,8 @@ footer {
         align-items: center;
     }
 
-    .articles {
+    .articles,
+    .articlesIndex {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(3 1fr);
@@ -822,19 +875,23 @@ footer {
         grid-row-gap: 20px;
         grid-template-areas: "articulo1""articulo2""articulo3";
         align-content: space-around;
-        padding-left: 20px;
+        padding-left: 140px;
         margin-top: 20px;
+    }
+
+    .articlesIndex {
+        padding-left: 140px;
     }
 
     .articulo1,
     .articulo2,
     .articulo3 {
         background-color: #EFF8FF;
-        width: 290px;
-        height: 534;
-        margin-bottom: 60px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        width: 310px;
+        /*height: 534px;*/
+        margin-bottom: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         border-radius: 10px;
         transition: box-shadow .1s;
     }
@@ -867,7 +924,7 @@ footer {
         width: 90vw;
         font-size: 1.5em;
         line-height: normal;
-        padding-left: 20px;
+        padding-left: 45px;
     }
 
     .titulos {
@@ -883,7 +940,7 @@ footer {
         line-height: 1.5;
         text-align: center;
         padding-bottom: 30px;
-        padding-left: 20px;
+        padding-left: 45px;
     }
 
     .tituloBloque {
@@ -897,19 +954,26 @@ footer {
         font-size: 1.3em;
         line-height: 1.5;
         text-align: center;
-        width: 250px;
-        padding-left: 20px;
     }
 
     .imagenArticle {
-        padding-left: 25px;
+        padding-left: 40px;
     }
 
 
     /*BOTON CONTACTANOS*/
+    .cajaBotonDesktop {
+        display: none;
+    }
+
+    .cajaBotonMobile {
+        margin-bottom: 50px;
+        padding-left: 200px;
+    }
+
     .cajaBoton {
         margin-bottom: 50px;
-        padding-left: 80px;
+        padding-left: 200px;
     }
 
     .boton {
@@ -935,10 +999,22 @@ footer {
     /*PAGINA SERVICIOS*/
     /*COMO TRABAJAMOS*/
     .iconosServicios {
-        padding-left: 130px;
+        padding-left: 150px;
+    }
+
+    .img-circle {
+        margin-left: 100px;
+    }
+
+    #desktop {
+        display: none;
     }
 
     /*SERVICIOS*/
+    hr {
+        display: none;
+    }
+
     .articuloServicio1 {
         grid-area: articuloServicio1;
     }
@@ -977,14 +1053,14 @@ footer {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;
-        grid-column-gap: 15px;
+        grid-column-gap: 5px;
         grid-row-gap: 30px;
         grid-template-areas: "articuloServicio1 articuloServicio2""articuloServicio3 articuloServicio4""articuloServicio5 articuloServicio6""articuloServicio7 articuloServicio8";
         justify-items: center;
         align-items: start;
         justify-content: space-between;
         align-content: space-between;
-        padding: 40px 20px 40px 20px;
+        padding: 40px 20px 10px 20px;
     }
 
     .articuloServicio1,
@@ -1039,46 +1115,51 @@ footer {
         font-size: 1.2em;
         text-align: center;
         line-height: 1.5;
-        /*width: 200px;
-        padding-left: 20px;*/
-
     }
 
     .parrafoServicio {
         font-size: 1em;
         text-align: center;
         line-height: 1.5;
-        /*width: 250px;*/
     }
 
     /*PAGINA CLIENTES*/
-    #clientes {
-        width: 95vw;
-        padding-top: 15px;
+    .comentarios {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 1.2em;
+        margin-left: 30px;
+        margin-right: 20px;
     }
 
-    #coment1,
-    #coment2,
-    #coment3 {
-        width: 95vw;
+    .comentariosSegundo {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 1.2em;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    .comentario {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 0.9em;
+        width: 380px;
+    }
+
+    .imagenComentario {
         padding-top: 20px;
+        height: 200px;
     }
 
-    #coment3 {
-        padding-bottom: 80px;
-    }
 
     /*PAGINA CONTACTO*/
     .formularioContacto {
         background-color: #EFF8FF;
-        /*height: 550px;*/
         width: 100vw;
         margin-top: 20px;
         display: grid;
         grid-template-columns: 100vw;
         grid-template-rows: auto auto;
         grid-row-gap: 20px;
-        grid-template-areas: "datos" "formulario";
+        grid-template-areas: "datos""formulario";
         justify-items: center;
         align-items: center;
     }
