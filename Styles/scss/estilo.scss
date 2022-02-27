@@ -1,4 +1,11 @@
-@import "_variables";
+@import "variables";
+@import "tipografias";
+
+@mixin color-width-border {
+    background-color: $color-terciario;
+    width: 380px;
+    border-radius: 10px;
+}
 
 body {
     overflow-x: hidden;
@@ -12,11 +19,11 @@ body {
         text-decoration: none;
         font-family: $fuente;
         font-size: 1.8em;
-        font-weight: 400;
+        font-weight: map-get($font-wights, "regular");
         color: $color-primario;
 
         &:hover {
-            font-weight: 600;
+            font-weight: map-get($font-wights, "semibold");
         }
     }
 
@@ -29,7 +36,7 @@ body {
     #servicios,
     #clientes,
     #contacto {
-        font-weight: 700;
+        font-weight: map-get($font-wights, "bold");
     }
 
 }
@@ -81,12 +88,12 @@ body {
 
 }
 
-section {
+main {
     font-family: $fuente;
 
     .texto1,
     .texto2 {
-        font-weight: 600;
+        font-weight: map-get($font-wights, "semibold");
         color: white;
     }
 
@@ -96,21 +103,19 @@ section {
         color: $color-secundario;
     }
 
-    h2 {
+    h1 {
         color: $color-primario;
     }
 
     #articulo1,
     #articulo2,
     #articulo3 {
-        background-color: $color-terciario;
-        width: 380px;
+        @include color-width-border;
         height: 534;
         margin-top: 60px;
         margin-bottom: 60px;
         padding-top: 40px;
         padding-bottom: 40px;
-        border-radius: 10px;
 
         &:hover {
             box-shadow: 0 0 15px rgba(15, 15, 15, 0.397);
@@ -120,11 +125,9 @@ section {
     #servicio1,
     #servicio2,
     #servicio3 {
-        background-color: $color-terciario;
-        width: 380px;
+        @include color-width-border;
         height: 300;
         margin-bottom: 40px;
-        border-radius: 10px;
 
         &:hover {
             box-shadow: 0 0 15px rgba(15, 15, 15, 0.397);
@@ -133,7 +136,7 @@ section {
 
     #boton {
         background-color: $color-primario;
-        font-weight: 600;
+        font-weight: map-get($font-wights, "semibold");
         font-size: 1.7em;
         padding-right: 3rem;
         padding-left: 3rem;
@@ -148,15 +151,11 @@ section {
     }
 
     #botonContacto {
-        background-color: $color-primario;
-        font-weight: 600;
+        @extend #boton;
         font-size: 1.2em;
         padding-right: 2rem;
         padding-left: 2rem;
-        color: white;
-        text-decoration: none;
-        border-radius: 50px;
-        transition: box-shadow .3s;
+    
 
         &:hover {
             box-shadow: 0 0 11px rgba(15, 15, 15, 0.603);
@@ -188,13 +187,12 @@ section {
     }
 
     .datosContacto {
-        grid-area: datos;
         align-self: center;
     }
 
     .horarioAtencion {
         font-size: 2em;
-        font-weight: 700;
+        font-weight: map-get($font-wights, "bold");
         color: $color-secundario;
         padding-bottom: 10px;
         padding-top: 30px;
@@ -203,14 +201,14 @@ section {
 
     .textoAtencion {
         font-size: 1.5em;
-        font-weight: 500;
+        font-weight: map-get($font-wights, "medium");
         text-align: center;
         padding-bottom: 10px;
     }
 
     .textoFormulario {
         font-size: 1.5em;
-        font-weight: 500;
+        font-weight: map-get($font-wights, "medium");
         text-align: justify;
     }
 
@@ -244,7 +242,7 @@ section {
 
     }
 
-    section {
+    main {
         .texto1 {
             position: absolute;
             top: 250px;
@@ -265,25 +263,25 @@ section {
             padding-left: 60px;
         }
 
-        h2 {
-            font-weight: 700;
+        h1 {
+            font-weight: map-get($font-wights, "bold");
             font-size: 2.5em;
             padding-top: 20px;
         }
 
         h3 {
-            font-weight: 600;
+            font-weight: map-get($font-wights, "semibold");
             font-size: 2em;
             color: $color-secundario;
         }
 
         h4 {
-            font-weight: 400;
+            font-weight: map-get($font-wights, "regular");
             font-size: 1.7em;
         }
 
         p {
-            font-weight: 400;
+            font-weight: map-get($font-wights, "regular");
             font-size: 1.5em;
             line-height: 1.5;
         }
@@ -292,7 +290,7 @@ section {
 }
 
 @media screen and (max-width: 576px) {
-    section {
+    main {
         .texto1 {
             position: absolute;
             top: 190px;
@@ -314,7 +312,7 @@ section {
             left: 80px;
         }
 
-        h2 {
+        h1 {
             font-weight: 700;
             font-size: 1.8em;
             padding-top: 20px;

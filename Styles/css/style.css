@@ -53,48 +53,46 @@ body {
     font-weight: 400;
     margin-left: 10px; }
 
-section {
+main {
   font-family: "Barlow Condensed", sans-serif; }
-  section #imagenBackground {
-    position: relative; }
-  section .texto1,
-  section .texto2 {
+  main .texto1,
+  main .texto2 {
     font-weight: 600;
     color: white; }
-  section #textoClientes,
-  section #textoContacto {
+  main #textoClientes,
+  main #textoContacto {
     font-weight: 600;
     color: #155D8D; }
-  section h2 {
+  main h1 {
     color: #1e75bb; }
-  section #articulo1,
-  section #articulo2,
-  section #articulo3 {
+  main #articulo1,
+  main #articulo2,
+  main #articulo3 {
     background-color: #eff8ff;
     width: 380px;
+    border-radius: 10px;
     height: 534;
     margin-top: 60px;
     margin-bottom: 60px;
     padding-top: 40px;
-    padding-bottom: 40px;
-    border-radius: 10px; }
-    section #articulo1:hover,
-    section #articulo2:hover,
-    section #articulo3:hover {
+    padding-bottom: 40px; }
+    main #articulo1:hover,
+    main #articulo2:hover,
+    main #articulo3:hover {
       box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
-  section #servicio1,
-  section #servicio2,
-  section #servicio3 {
+  main #servicio1,
+  main #servicio2,
+  main #servicio3 {
     background-color: #eff8ff;
     width: 380px;
+    border-radius: 10px;
     height: 300;
-    margin-bottom: 40px;
-    border-radius: 10px; }
-    section #servicio1:hover,
-    section #servicio2:hover,
-    section #servicio3:hover {
+    margin-bottom: 40px; }
+    main #servicio1:hover,
+    main #servicio2:hover,
+    main #servicio3:hover {
       box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
-  section #boton {
+  main #boton, main #botonContacto {
     background-color: #1e75bb;
     font-weight: 600;
     font-size: 1.7em;
@@ -104,136 +102,129 @@ section {
     text-decoration: none;
     border-radius: 50px;
     transition: box-shadow .3s; }
-    section #boton:hover {
+    main #boton:hover, main #botonContacto:hover {
       box-shadow: 0 0 11px rgba(15, 15, 15, 0.603); }
-  section #botonContacto {
-    background-color: #1e75bb;
-    font-weight: 600;
+  main #botonContacto {
     font-size: 1.2em;
     padding-right: 2rem;
-    padding-left: 2rem;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: box-shadow .3s; }
-    section #botonContacto:hover {
+    padding-left: 2rem; }
+    main #botonContacto:hover {
       box-shadow: 0 0 11px rgba(15, 15, 15, 0.603); }
-  section #servicios {
+  main #servicios {
     background-color: #eff8ff;
     padding-top: 40px;
     padding-left: 10px; }
-  section #descripcion {
+  main #descripcion {
     font-size: 1.2em; }
-  section #servicio:hover {
+  main #servicio:hover {
     color: #155D8D; }
-  section #cuerpo {
+  main #cuerpo {
     border-color: none; }
-  section #comentario {
+  main #comentario {
     font-size: 1em; }
-  section .datosContacto {
-    grid-area: datos;
+  main .datosContacto {
     align-self: center; }
-  section .horarioAtencion {
+  main .horarioAtencion {
     font-size: 2em;
     font-weight: 700;
     color: #155D8D;
     padding-bottom: 10px;
     padding-top: 30px;
     text-align: center; }
-  section .textoAtencion {
+  main .textoAtencion {
     font-size: 1.5em;
     font-weight: 500;
     text-align: center;
     padding-bottom: 10px; }
-  section .textoFormulario {
+  main .textoFormulario {
     font-size: 1.5em;
     font-weight: 500;
     text-align: justify; }
-  section #contacto {
+  main #contacto {
     background-color: #eff8ff;
     height: 590px; }
-  section #formulario {
+  main #formulario {
     width: 450px;
     background-color: #155d8d88;
     box-sizing: border-box;
     border-radius: 5px; }
-  section #titulosForm {
+  main #titulosForm {
     font-size: 1.5em; }
-  section #emailHelp {
+  main #emailHelp {
     color: white; }
 
 @media screen and (min-width: 992px) {
   #footer a {
     font-size: 1.4em; }
-  section .texto1 {
+  main .texto1 {
     position: absolute;
     top: 250px;
     left: 230px; }
-  section .texto2 {
+  main .texto2 {
     position: absolute;
     top: 50%;
     left: 260px; }
-  section #textoNosotros,
-  section #textoServicios,
-  section #textoClientes,
-  section #textoContacto {
+  main #textoNosotros,
+  main #textoServicios,
+  main #textoClientes,
+  main #textoContacto {
     padding-top: 50px;
     padding-left: 60px; }
-  section h2 {
+  main h1 {
     font-weight: 700;
     font-size: 2.5em;
     padding-top: 20px; }
-  section h3 {
+  main h3 {
     font-weight: 600;
     font-size: 2em;
     color: #155D8D; }
-  section h4 {
+  main h4 {
     font-weight: 400;
     font-size: 1.7em; }
-  section p {
+  main p {
     font-weight: 400;
     font-size: 1.5em;
     line-height: 1.5; } }
 
 @media screen and (max-width: 576px) {
-  section .texto1 {
+  main .texto1 {
     position: absolute;
     top: 190px;
     left: 40px; }
-  section .texto2 {
+  main .texto2 {
     position: absolute;
     top: 230px;
     left: 70px; }
-  section #textoNosotros,
-  section #textoServicios,
-  section #textoClientes,
-  section #textoContacto {
+  main #textoNosotros,
+  main #textoServicios,
+  main #textoClientes,
+  main #textoContacto {
     position: absolute;
     top: 200px;
     left: 80px; }
-  section h2 {
+  main h1 {
     font-weight: 700;
     font-size: 1.8em;
     padding-top: 20px; }
-  section h3 {
+  main h3 {
     font-weight: 600;
     font-size: 1.6em;
     color: #155D8D; }
-  section h4 {
+  main h4 {
     font-weight: 400;
     font-size: 1.3em; }
-  section p {
+  main p {
     font-weight: 400;
     font-size: 1em;
     line-height: 1.5; }
-  section #foto {
+  main #foto {
     display: none; }
-  section #coment1 {
+  main #coment1 {
     width: 450px; }
-  section #contacto {
+  main #contacto {
     height: auto;
     padding-bottom: 30px; }
-  section #formulario {
+  main #formulario {
     padding-bottom: 30px; }
   #footer a {
     font-size: 1em;
