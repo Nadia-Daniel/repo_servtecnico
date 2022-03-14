@@ -196,11 +196,13 @@ main {
     width: 45%; } }
 
 @media screen and (min-width: 780px) and (max-width: 992px) {
+  body {
+    overflow-x: hidden; }
   #navbar {
     background-color: #eff8ff;
     font-family: "Barlow Condensed", sans-serif; }
     #navbar #logo {
-      width: 70%; }
+      width: 30vw; }
     #navbar a {
       text-decoration: none;
       font-family: "Barlow Condensed", sans-serif;
@@ -268,7 +270,7 @@ main {
     flex-direction: row;
     justify-content: space-around; }
     #navbar #logo {
-      width: 20vw; }
+      width: 30vw; }
     #navbar a {
       text-decoration: none;
       font-family: "Barlow Condensed", sans-serif;
@@ -338,7 +340,7 @@ main {
     flex-direction: row;
     justify-content: space-around; }
     #navbar #logo {
-      width: 50%; }
+      width: 50vw; }
     #navbar a {
       text-decoration: none;
       font-family: "Barlow Condensed", sans-serif;
@@ -372,10 +374,32 @@ main {
     height: auto;
     padding-bottom: 30px; }
   main #formulario {
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    width: 90%; }
   main hr {
     display: none; }
+  main #articulo1,
+  main #articulo2,
+  main #articulo3 {
+    width: 80%;
+    margin-top: 20px; }
+    main #articulo1:hover,
+    main #articulo2:hover,
+    main #articulo3:hover {
+      box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
+  main #servicio1,
+  main #servicio2,
+  main #servicio3 {
+    width: 80%;
+    margin-top: 20px; }
+    main #servicio1:hover,
+    main #servicio2:hover,
+    main #servicio3:hover {
+      box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
   #footer a {
     font-size: 1em;
     justify-items: center;
-    margin-left: 5px; } }
+    margin-left: 5px; }
+  #footer #redes {
+    padding-left: 15px;
+    padding-right: 15px; } }

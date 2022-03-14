@@ -300,12 +300,16 @@ main {
 }
 
 @media screen and (min-width: 780px) and (max-width: 992px){
+    body {
+        overflow-x: hidden;
+    }
+
     #navbar {
         background-color: $color-terciario;
         font-family: $fuente;
 
         #logo {
-            width: 70%;
+            width: 30vw;
         }
     
         a {
@@ -407,7 +411,7 @@ main {
         justify-content: space-around;
     
         #logo {
-            width: 20vw;
+            width: 30vw;
         }
 
         a {
@@ -513,7 +517,7 @@ main {
         justify-content: space-around;
 
         #logo {
-            width: 50%;
+            width: 50vw;
         }
     
         a {
@@ -572,10 +576,29 @@ main {
 
         #formulario {
             padding-bottom: 30px;
+            width: 90%;
         }
 
         hr {
             display: none;
+        }
+
+        #articulo1, #articulo2, #articulo3 {
+            width: 80%;
+            margin-top: 20px;
+
+            &:hover {
+                box-shadow: 0 0 15px rgba(15, 15, 15, 0.397);
+            }
+        }
+
+        #servicio1, #servicio2, #servicio3 {
+            width: 80%;
+            margin-top: 20px;
+
+            &:hover {
+                box-shadow: 0 0 15px rgba(15, 15, 15, 0.397);
+            }
         }
     }
 
@@ -584,6 +607,11 @@ main {
             font-size: 1em;
             justify-items: center;
             margin-left: 5px;
+        }
+
+        #redes{
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }
