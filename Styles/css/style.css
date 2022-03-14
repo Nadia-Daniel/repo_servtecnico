@@ -4,6 +4,8 @@ body {
 #navbar {
   background-color: #eff8ff;
   font-family: "Barlow Condensed", sans-serif; }
+  #navbar #logo {
+    width: 40%; }
   #navbar a {
     text-decoration: none;
     font-family: "Barlow Condensed", sans-serif;
@@ -146,8 +148,15 @@ main {
     color: white; }
 
 @media screen and (min-width: 992px) {
+  #navbar {
+    background-color: #eff8ff;
+    font-family: "Barlow Condensed", sans-serif; }
+    #navbar #logo {
+      width: 20vw; }
   #footer a {
     font-size: 1.4em; }
+  #footer #nD {
+    font-size: 1em; }
   main #mobile {
     display: none; }
   main h1 {
@@ -164,9 +173,180 @@ main {
   main p {
     font-weight: 400;
     font-size: 1.5em;
-    line-height: 1.5; } }
+    line-height: 1.5; }
+  main #articulo1,
+  main #articulo2,
+  main #articulo3 {
+    width: 30%;
+    margin-top: 20px; }
+    main #articulo1:hover,
+    main #articulo2:hover,
+    main #articulo3:hover {
+      box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
+  main #servicio1,
+  main #servicio2,
+  main #servicio3 {
+    width: 30%;
+    margin-top: 20px; }
+    main #servicio1:hover,
+    main #servicio2:hover,
+    main #servicio3:hover {
+      box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
+  main #coment1 {
+    width: 45%; } }
 
-@media screen and (max-width: 596px) {
+@media screen and (min-width: 780px) and (max-width: 992px) {
+  #navbar {
+    background-color: #eff8ff;
+    font-family: "Barlow Condensed", sans-serif; }
+    #navbar #logo {
+      width: 70%; }
+    #navbar a {
+      text-decoration: none;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1.5em;
+      font-weight: 400;
+      color: #1e75bb; }
+      #navbar a:hover {
+        font-weight: 600; }
+  #footer a {
+    font-size: 1.4em; }
+  #footer #nD {
+    font-size: 1em; }
+  main #mobile {
+    display: none; }
+  main h1 {
+    font-weight: 700;
+    font-size: 2em;
+    padding-top: 20px; }
+  main h3 {
+    font-weight: 600;
+    font-size: 1.8em;
+    color: #155D8D; }
+  main h4 {
+    font-weight: 400;
+    font-size: 1.5em;
+    max-width: 80%;
+    margin-left: 90px; }
+  main p {
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5; }
+  main hr {
+    display: none; }
+  main #contacto {
+    height: auto;
+    padding-bottom: 10px; }
+  main #formulario {
+    padding-bottom: 5px; }
+  main #articulo1,
+  main #articulo2,
+  main #articulo3 {
+    width: 30%;
+    margin-top: 20px; }
+    main #articulo1:hover,
+    main #articulo2:hover,
+    main #articulo3:hover {
+      box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
+  main #servicio1,
+  main #servicio2,
+  main #servicio3 {
+    width: 30%;
+    margin-top: 20px; }
+    main #servicio1:hover,
+    main #servicio2:hover,
+    main #servicio3:hover {
+      box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
+  main #coment1 {
+    width: 45%; } }
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  #navbar {
+    background-color: #eff8ff;
+    font-family: "Barlow Condensed", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    #navbar #logo {
+      width: 20vw; }
+    #navbar a {
+      text-decoration: none;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      color: #1e75bb; }
+      #navbar a:hover {
+        font-weight: 600; }
+  #footer a {
+    font-size: 1em; }
+  #footer #nD {
+    font-size: 1em; }
+  main #mobile {
+    display: none; }
+  main h1 {
+    font-weight: 700;
+    font-size: 1.7em;
+    padding-top: 20px; }
+  main h3 {
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #155D8D; }
+  main h4 {
+    font-weight: 400;
+    font-size: 1.3em;
+    max-width: 80%;
+    margin-left: 90px; }
+  main p {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5; }
+  main hr {
+    display: none; }
+  main #contacto {
+    height: auto;
+    padding-bottom: 10px; }
+  main #formulario {
+    padding-bottom: 5px; }
+  main #articulo1,
+  main #articulo2,
+  main #articulo3 {
+    width: 80%;
+    margin-top: 20px; }
+    main #articulo1:hover,
+    main #articulo2:hover,
+    main #articulo3:hover {
+      box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
+  main #servicio1,
+  main #servicio2,
+  main #servicio3 {
+    width: 60%;
+    margin-top: 20px; }
+    main #servicio1:hover,
+    main #servicio2:hover,
+    main #servicio3:hover {
+      box-shadow: 0 0 15px rgba(15, 15, 15, 0.397); }
+  main #coment1 {
+    width: 80%; }
+  main #foto {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  #navbar {
+    background-color: #eff8ff;
+    font-family: "Barlow Condensed", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    #navbar #logo {
+      width: 50%; }
+    #navbar a {
+      text-decoration: none;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1.2em;
+      font-weight: 400;
+      color: #1e75bb; }
+      #navbar a:hover {
+        font-weight: 600; }
   main #desktop {
     display: none; }
   main h1 {
@@ -187,15 +367,15 @@ main {
   main #foto {
     display: none; }
   main #coment1 {
-    width: 450px; }
+    width: 80%; }
   main #contacto {
     height: auto;
     padding-bottom: 30px; }
   main #formulario {
     padding-bottom: 30px; }
+  main hr {
+    display: none; }
   #footer a {
     font-size: 1em;
     justify-items: center;
-    margin-left: 5px; }
-  hr {
-    display: none; } }
+    margin-left: 5px; } }
