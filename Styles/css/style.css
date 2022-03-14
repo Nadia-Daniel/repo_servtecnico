@@ -146,10 +146,10 @@ main {
     color: white; }
 
 @media screen and (min-width: 992px) {
-  main #mobile {
-    display: none; }
   #footer a {
     font-size: 1.4em; }
+  main #mobile {
+    display: none; }
   main h1 {
     font-weight: 700;
     font-size: 2.5em;
